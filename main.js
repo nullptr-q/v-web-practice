@@ -8,8 +8,8 @@ function sumArray(nums) {
 /******************************************************************************/
 
 function findMax(nums) {
-    let max = 0;
-    for (let i = 0; i < nums.length; i++){
+    let max = nums[0];
+    for (let i = 1; i < nums.length; i++){
         if (nums[i] > max) max = nums[i];
 
     }
@@ -47,6 +47,6 @@ function groupByCategory(data) {
 }
 /******************************************************************************/
 
-console.log(sumArray([1, 2 ,4]))
-console.log(findMax([14, 164, -6, 3]))
-console.log(groupByCategory(result))
+console.log(sumArray([1, 2 ,4]));
+console.log(findMax([-14, -164, -6, -3]));
+console.log(groupByCategory(result));
